@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>org.openhab.bundles</groupId>
+        <artifactId>binding</artifactId>
+        <version>1.6.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <bundle.symbolicName>org.openhab.binding.aleoncean</bundle.symbolicName>
+        <bundle.namespace>org.openhab.binding.aleoncean</bundle.namespace>
+        <deb.name>openhab-addon-binding-aleoncean</deb.name>
+        <deb.description>openhab addon binding aleoncean</deb.description>
+    </properties>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.openhab.binding</groupId>
+    <artifactId>org.openhab.binding.aleoncean</artifactId>
+
+    <name>openHAB aleoncean Binding</name>
+
+    <packaging>eclipse-plugin</packaging>
+
+    <version>1.6.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>
+            <!--
+                        <plugin>
+                            <groupId>org.vafer</groupId>
+                            <artifactId>jdeb</artifactId>
+                        </plugin>
+            -->
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-compiler-plugin</artifactId>
+                <version>${tycho-version}</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+<!--
+     The dependencies should be comment out, if you use the normal build setup.
+     They are checked, so NetBeans could resolve the dependencies, too.
+-->
+<!--
+    <dependencies>
+        <dependency>
+            <groupId>org.openhab.core</groupId>
+            <artifactId>org.openhab.core</artifactId>
+            <version>1.6.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>eu.aleon</groupId>
+            <artifactId>aleoncean</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.openhab.model</groupId>
+            <artifactId>org.openhab.model.item</artifactId>
+            <version>1.6.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.openhab.core</groupId>
+            <artifactId>org.openhab.core.library</artifactId>
+            <version>1.6.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.birt.runtime</groupId>
+            <artifactId>org.eclipse.osgi.services</artifactId>
+            <version>3.3.100.v20120522-1822</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.birt.runtime</groupId>
+            <artifactId>org.eclipse.osgi</artifactId>
+            <version>3.8.2.v20130124-134944</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+-->
+    <licenses>
+        <license>
+            <name>Eclipse Public License, Version 1.0</name>
+            <url>http://www.eclipse.org/legal/epl-v10.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>aleon GmbH</name>
+        <url>https://www.aleon.eu</url>
+    </organization>
+  
+    <developers>
+        <developer>
+            <id>maggu2810</id>
+            <name>Markus Rathgeb</name>
+            <email>maggu2810@gmail.com</email>
+            <!--<url></url>-->
+            <organization>aleon GmbH</organization>
+            <organizationUrl>https://www.aleon.eu</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Berlin</timezone>
+            <properties>
+                <!--<picUrl></picUrl>-->
+                <!--<gtalk></gtalk>-->
+            </properties>
+        </developer>
+    </developers>
+
+    <!--
+        <contributors>
+            <contributor>
+                <name></name>
+                <email></email>
+                <url></url>
+                <organization></organization>
+                <organizationUrl></organizationUrl>
+                <roles>
+                    <role>tester</role>
+                </roles>
+                <timezone></timezone>
+                <properties>
+                    <gtalk></gtalk>
+                </properties>
+            </contributor>
+        </contributors>
+    -->
+
+</project>
