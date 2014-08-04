@@ -1,26 +1,38 @@
-* REMOTEID: The EnOcean ID of the remote device. If not set FF:FF:FF:FF will be used.
+# item configuration
 
-* LOCALID: The EnOcean ID of the local side. If not set FF:FF:FF:FF will be used.
+## configuration parameters
 
- You need this for exmaple if you want to send something with a specific sender ID.
+### REMOTEID
 
-* TYPE: The device type that should be used.
+The EnOcean ID of the remote device. If not set FF:FF:FF:FF will be used.
 
- The device type identifiers are defined by the aleoncean library.
+### LOCALID
 
-* PARAMETER: The parameter of the device that should be used by the item.
+The EnOcean ID of the local side. If not set FF:FF:FF:FF will be used.
 
- The parameters of the devices are defined by the aleoncean library.
+You need this for exmaple if you want to send something with a specific sender ID.
 
-* CONVPARAM: A parameter that could be used to specify the internal converter if multiple ones are available.
+### TYPE
 
- A converter is used to translate between the item and the device parameter.
+The device type that should be used.
 
- E.g. a switch could be used to handle a OnOffType (ON or OFF). A rocker switch action could be "up pressed", "up released", "down pressed" or "down released". Here we can define, if how the on / off should be changed.
+The device type identifiers are defined by the aleoncean library.
 
----
+### PARAMETER
 
-Examples:
+The parameter of the device that should be used by the item.
+
+The parameters of the devices are defined by the aleoncean library.
+
+### CONVPARAM
+
+A parameter that could be used to specify the internal converter if multiple ones are available.
+
+A converter is used to translate between the item and the device parameter.
+
+E.g. a switch could be used to handle a OnOffType (ON or OFF). A rocker switch action could be "up pressed", "up released", "down pressed" or "down released". Here we can define, if how the on / off should be changed.
+
+## Examples
 
 ```
 // Map a rocker switch to a roller shutter item (up / down / stop) -- see converter documentation
