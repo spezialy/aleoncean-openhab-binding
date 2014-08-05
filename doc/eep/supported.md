@@ -1,5 +1,11 @@
 # remote device
 
+## A5-02-05
+
+### Parameter
+
+* TEMPERATURE_CELSIUS (read)
+
 ## A5-04-01
 
 ### Parameter
